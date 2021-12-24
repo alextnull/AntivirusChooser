@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Nodes>
+	<Node Id="1" Type="Question">
+		<Yes ToNodeId="2" Text="Да" />
+		<No ToNodeId="9" Text="Нет" />
+		<Text>Пользователь использует антивирусную программу?</Text>
+	</Node>
+
+	<Node Id="2" Type="Question">
+		<Yes ToNodeId="3" Text="Больше 2000 руб." />
+		<No ToNodeId="6" Text="Меньше 2000 руб." />
+		<Text>Сколько стоит ваша антивирусная программа?</Text>
+	</Node>
+
+	<Node Id="3" Type="Question">
+		<Yes ToNodeId="4" Text="Да" />
+		<No ToNodeId="5" Text="Нет" />
+		<Text>Ваш антивирус часто обнаруживает вирусы?</Text>
+	</Node>
+
+	<Node Id="4" Type="Conclusion">
+		<Text>Avast Premium Security</Text>
+	</Node>
+
+	<Node Id="5" Type="Conclusion">
+		<Text>Kaspersky Internet Security</Text>
+	</Node>
+
+	<Node Id="6" Type="Question">
+		<Yes ToNodeId="7" Text="Да" />
+		<No ToNodeId="8" Text="Нет" />
+		<Text>Ощущается ли замедление системы при включенном антивирусе?</Text>
+	</Node>
+
+	<Node Id="7" Type="Conclusion">
+		<Text>Rising Antivirus</Text>
+	</Node>
+
+	<Node Id="8" Type="Conclusion">
+		<Text>Avira Antivirus Pro</Text>
+	</Node>
+
+	<Node Id="9" Type="Question">
+		<Yes ToNodeId="10" Text="Да" />
+		<No ToNodeId="11" Text="Нет" />
+		<Text>У пользователя слабое оборудование?</Text>
+	</Node>
+
+	<Node Id="10" Type="Conclusion">
+		<Text>AVG Free Antivirus</Text>
+	</Node>
+
+	<Node Id="11" Type="Question">
+		<Yes ToNodeId="13" Text="Да" />
+		<No ToNodeId="12" Text="Нет" />
+		<Text>Пользователю требуется мгновенная защита сообщений?</Text>
+	</Node>
+
+	<Node Id="12" Type="Conclusion">
+		<Text>Comodo Internet Security Premium</Text>
+	</Node>
+
+	<Node Id="13" Type="Question">
+		<Yes ToNodeId="15" Text="Да" />
+		<No ToNodeId="14" Text="Нет" />
+		<Text>Пользователю требуется фаервол?</Text>
+	</Node>
+
+	<Node Id="14" Type="Conclusion">
+		<Text>Tencent PC Manager</Text>
+	</Node>
+
+	<Node Id="15" Type="Question">
+		<Yes ToNodeId="17" Text="Да" />
+		<No ToNodeId="16" Text="Нет" />
+		<Text>Пользователю требуется функция Anti-Malware?</Text>
+	</Node>
+
+	<Node Id="16" Type="Conclusion">
+		<Text>Norman: Security Suite Pro</Text>
+	</Node>
+
+	<Node Id="17" Type="Question">
+		<Yes ToNodeId="19" Text="Да" />
+		<No ToNodeId="18" Text="Нет" />
+		<Text>Пользователю требуется функция Anti-Trojan?</Text>
+	</Node>
+
+	<Node Id="18" Type="Conclusion">
+		<Text>BitDefender Antivirus Plus</Text>
+	</Node>
+
+	<Node Id="19" Type="Question">
+		<Yes ToNodeId="21" Text="Да" />
+		<No ToNodeId="20" Text="Нет" />
+		<Text>Пользователю требуется функция Anti-Spyware?</Text>
+	</Node>
+
+	<Node Id="20" Type="Conclusion">
+		<Text>F-Secure Anti-Virus</Text>
+	</Node>
+
+	<Node Id="21" Type="Question">
+		<Yes ToNodeId="23" Text="Да" />
+		<No ToNodeId="22" Text="Нет" />
+		<Text>Пользователю требуется функция Anti-Worm?</Text>
+	</Node>
+
+	<Node Id="22" Type="Conclusion">
+		<Text>G Data AntiVirus</Text>
+	</Node>
+
+	<Node Id="23" Type="Question">
+		<Yes ToNodeId="25" Text="Да" />
+		<No ToNodeId="24" Text="Нет" />
+		<Text>Пользователю требуется функция Anti-Rootkit?</Text>
+	</Node>
+
+	<Node Id="24" Type="Conclusion">
+		<Text>BullGuard Antivirus</Text>
+	</Node>
+
+	<Node Id="25" Type="Question">
+		<Yes ToNodeId="27" Text="Да" />
+		<No ToNodeId="26" Text="Нет" />
+		<Text>Пользователю требуется функция Анти-Фишинг?</Text>
+	</Node>
+
+	<Node Id="26" Type="Conclusion">
+		<Text>Panda Antivirus Pro</Text>
+	</Node>
+
+	<Node Id="27" Type="Question">
+		<Yes ToNodeId="29" Text="Да" />
+		<No ToNodeId="28" Text="Нет" />
+		<Text>Пользователю требуется функция Secure Network?</Text>
+	</Node>
+
+	<Node Id="28" Type="Conclusion">
+		<Text>360 Total Security</Text>
+	</Node>
+
+	<Node Id="29" Type="Question">
+		<Yes ToNodeId="31" Text="Да" />
+		<No ToNodeId="30" Text="Нет" />
+		<Text>Пользователю требуется функция защиты исходящей электронной почты?</Text>
+	</Node>
+
+	<Node Id="30" Type="Conclusion">
+		<Text>McAfee: Internet Security</Text>
+	</Node>
+
+	<Node Id="31" Type="Question">
+		<Yes ToNodeId="33" Text="Да" />
+		<No ToNodeId="32" Text="Нет" />
+		<Text>Пользователю требуется функция защиты входящей электронной почты?</Text>
+	</Node>
+
+	<Node Id="32" Type="Conclusion">
+		<Text>Trend Micro Internet Security 2021</Text>
+	</Node>
+
+	<Node Id="33" Type="Question">
+		<Yes ToNodeId="35" Text="Да" />
+		<No ToNodeId="34" Text="Нет" />
+		<Text>Пользователю требуется функция автоматической очистки заражённых файлов?</Text>
+	</Node>
+
+	<Node Id="34" Type="Conclusion">
+		<Text>Qihoo: 360 Internet Security</Text>
+	</Node>
+
+	<Node Id="35" Type="Question">
+		<Yes ToNodeId="37" Text="Да" />
+		<No ToNodeId="36" Text="Нет" />
+		<Text>Пользователю требуется функция сканирования сжатых файлов?</Text>
+	</Node>
+
+	<Node Id="36" Type="Conclusion">
+		<Text>Kingsoft Internet Security</Text>
+	</Node>
+
+	<Node Id="37" Type="Question">
+		<Yes ToNodeId="39" Text="Да" />
+		<No ToNodeId="38" Text="Нет" />
+		<Text>Пользователю требуется защита от эксплойтов?</Text>
+	</Node>
+
+	<Node Id="38" Type="Conclusion">
+		<Text>Webroot: SecureAnywhere Complete</Text>
+	</Node>
+
+	<Node Id="39" Type="Question">
+		<Yes ToNodeId="41" Text="Да" />
+		<No ToNodeId="40" Text="Нет" />
+		<Text>Пользователю требуется реестр защиты от запуска?</Text>
+	</Node>
+
+	<Node Id="40" Type="Conclusion">
+		<Text>Baidu Antivirus</Text>
+	</Node>
+
+	<Node Id="41" Type="Conclusion">
+		<Text>ESET NOD32 Antivirus</Text>
+	</Node>
+</Nodes>
