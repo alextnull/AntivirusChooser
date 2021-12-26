@@ -7,67 +7,14 @@
         mc:Ignorable="d"
         Title="Antivirus Chooser" Height="450" Width="800"
         MinHeight="400" MinWidth="700">
-    <Window.Resources>
-        <Style x:Key="TextBlockHeaderStyle" TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Top" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="FontSize" Value="35" />
-            <Setter Property="FontWeight" Value="SemiBold" />
-            <Setter Property="Margin" Value="0, 10, 0, 0" />
-            <Setter Property="Foreground" Value="Black" />
-        </Style>
-
-        <Style x:Key="TextBlockDescriptionStyle" TargetType="TextBlock">
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="FontSize" Value="25" />
-            <Setter Property="Margin" Value="0, 0, 0, 40" />
-            <Setter Property="TextWrapping" Value="Wrap" />
-        </Style>
-
-        <Style TargetType="Button">
-            <Setter Property="Width" Value="140" />
-            <Setter Property="Height" Value="30" />
-            <Setter Property="Margin" Value="10, 0" />
-            <Setter Property="Background" Value="#FF2C8CFF" />
-            <Setter Property="Foreground" Value="#FFFFFFFF" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="Border" Background="{TemplateBinding Background}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#FF226FCB" TargetName="Border" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="StackPanelContent" TargetType="StackPanel">
-            <Setter Property="Orientation" Value="Horizontal" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
-    </Window.Resources>
     <Grid>
         <TextBlock Text="Выбор антивирусной программы" Style="{StaticResource TextBlockHeaderStyle}"/>
 
         <!-- Начать -->
         <StackPanel x:Name="StackPanelStart" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button x:Name="ButtonStartSurvey" Content="Начать опрос" Click="ButtonStartSurvey_Click" OverridesDefaultStyle="True" />
+            <Button x:Name="ButtonStartSurvey" Content="Начать опрос" Click="ButtonStartSurvey_Click" />
         </StackPanel>
         <!-- Опрос -->
-        <StackPanel x:Name="StackPanelSurvey" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock x:Name="TextBlockNodeText" Style="{StaticResource TextBlockDescriptionStyle}"/>
-            <StackPanel x:Name="StackPanelYesNo" Style="{StaticResource StackPanelContent}">
-                <Button x:Name="ButtonYes" Content="{Binding DataContext.Node.Yes.Text}" Click="ButtonYes_Click" />
-                <Button x:Name="ButtonNo" Content="{Binding DataContext.Node.No.Text}" Click="ButtonNo_Click" />
-            </StackPanel>
-            <StackPanel x:Name="StackPanelOk" Style="{StaticResource StackPanelContent}">
-                <Button x:Name="ButtonOk" Click="ButtonOk_Click" />
-            </StackPanel>
-        </StackPanel>
+        <ContentControl x:Name="ContentControlSurvey" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

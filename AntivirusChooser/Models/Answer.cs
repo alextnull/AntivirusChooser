@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace AntivirusChooser.Models
+namespace AntivirusChooser
 {
     [Serializable]
     public class Answer

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AntivirusChooser.Models
+namespace AntivirusChooser
 {
     [Serializable]
     public enum NodeType
