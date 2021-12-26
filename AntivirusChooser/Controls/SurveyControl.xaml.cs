@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Xml.Serialization;
 using System;
 using System.Xml.Linq;
+using System.Configuration;
 
 namespace AntivirusChooser
 {
@@ -29,7 +30,8 @@ namespace AntivirusChooser
         private void InitializeNodes()
         {
             var formatter = new XmlSerializer(typeof(List<Node>), new XmlRootAttribute("Nodes"));
-            var nodesFile = Path.Combine(App.ApplicationPath, "TreeSolution.xml");
+            var nodesFileName = ConfigurationManager.AppSettings["TreeSolutionName"].ToString();
+            var nodesFile = Path.Combine(App.ApplicationPath, nodesFileName);
             using (var fs = new FileStream(nodesFile, FileMode.OpenOrCreate))
             {
                 Nodes = (List<Node>)formatter.Deserialize(fs);
