@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Serialization;
 using System;
+using System.Xml.Linq;
 
 namespace AntivirusChooser
 {
@@ -21,7 +22,7 @@ namespace AntivirusChooser
         {
             InitializeComponent();
             InitializeNodes();
-            DataContext = Nodes.First();
+            DataContext = Nodes.Single(n => n.Id == 1);
             ChangeButtons();
         }
 
